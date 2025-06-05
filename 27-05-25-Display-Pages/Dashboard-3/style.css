@@ -1,0 +1,844 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div1{
+   
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+
+/* .image{
+
+background-image: url("./resources/mountain-header.webp") ;
+height: 40vh;
+width: 100%;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+} */
+
+.image{
+    background-image: url("./resources/house_on_mountain_with_river_in_mountains_background_hd_nature.jpg");
+    height: 40vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+.nav{
+    width: 50%;
+}
+.image .nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    
+     
+}
+
+
+.image .nav ul li{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+.image .nav ul li a{
+text-decoration: none;
+color: white;
+
+}
+.dot{
+    position: relative;
+}
+.image .nav ul li div{
+    height: 10px;
+    width: 10px;
+    background-color: dodgerblue;
+    position: absolute;
+    border-radius: 30px;
+    left: 11px;
+    bottom: 15px;
+}
+
+.search{
+    width: 50%;
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+    position: relative;
+}
+
+.search-input{
+    width: 75%;
+    display: flex;
+    justify-content: end;
+}
+.search-input input{
+    height: 8%;
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(224, 222, 222);
+   
+}
+.search-input i{
+    position: relative;
+    right: 30px;
+    top: 5px;
+}
+.small-profile-image {
+
+width: 10%;
+
+display: flex;
+justify-content: center;
+}
+
+.small-profile-image img{
+    width: 40%;
+    height: 10%;
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+.tweet-btn{
+  width: 15%;
+}
+.tweet-btn button{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+}
+
+.div2{
+   
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.light-gray-div{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-color: rgb(249, 249, 249);
+    padding: 10px;
+}
+.empty{
+    width: 30%;
+}
+.center{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.center-content-head{
+    color: rgb(74, 165, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.center-content-text1{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+}
+.center-content-text2{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 18px;
+}
+.last{
+width: 40%;
+display: flex;
+justify-content: end;
+align-items: center ;
+}
+
+.last button{
+    background-color: dodgerblue;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+
+}
+.main-content{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    
+   
+    
+}
+.main-div1{
+    width: 30% ;
+    height: 100%;
+    border-radius: 1px solid rgb(213, 211, 211);
+
+}
+
+.outer-div {
+    
+    width: 20%;
+    height: 60%;
+    background-color: #fff;
+    border: 1px solid rgb(244, 241, 241);
+    box-shadow: 3px 3px 3px 3px rgb(231, 225, 225);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 90px;
+    border-radius: 20px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.image-div{
+
+height: 25%;
+display: flex;
+align-items: end;
+}
+.main-heading-sub{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+height: 10%;
+width: 60%;
+}
+.main-text{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.work-place{
+display: flex;
+flex-direction: column;
+width: 60%;
+height: 10%;
+}
+.nav-list{
+
+height: 55%;
+display: flex;
+width: 60%;
+
+}
+.nav-list ul{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+
+}
+.nav-list ul li{
+    display: flex;
+    gap: 20px;
+
+}
+
+.inner-div{
+     position: absolute;
+      top: 840px;
+    left: 90px;
+    
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.in-1{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(77, 166, 254);
+    padding: 5px ;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 3px 3px 3px 3px rgb(231, 225, 225);
+}
+.in-2{
+   display: flex;
+    justify-content: center;
+    background-color:rgb(77, 166, 254);
+    padding: 5px ;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px rgb(231, 225, 225);
+   
+}
+.in-3{
+    color: rgb(77, 166, 254);
+}
+.outer-div img{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.outer-image-div{
+    
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outer-image-div img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name-heading-div{
+
+height: 20%;
+justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.work-work-place{
+
+height: 20%;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+
+ height: 40%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+.main-div2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+.main-div2-card1{
+    height: 40%;
+    width: 100%;
+    border: 1px solid rgb(238, 230, 230);
+    border-radius: 10px;
+    display: flex;
+     box-shadow: 3px 3px 3px 3px  rgb(183, 178, 178);
+}
+
+.main-div2-card1-image{
+
+width: 20%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main-div2-card1-image-containing{
+    display: flex;
+    align-items:center ;
+    height: 40%;
+    justify-content: center;
+}
+.main-div2-card1-image div{
+    height: 60%;
+}
+.main-div2-card1-image-containing img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.main-div2-card1-content{
+
+width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.main-div2-card1-content-div1{
+
+height: 25%;
+width: 100%;
+display: flex;
+
+}
+.card1-content-div1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.card1-content-div1-1{
+   
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+.card1-content-div1-2{
+
+    height: 100%;
+    width: 50%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1-content-div2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.card1-content-div2-1{
+
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.card1-content-div2-2{
+
+height: 100%;
+width: 10%;
+display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-div2-card1-content-div2{
+
+height: 50%;
+width: 100%;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+    
+}
+
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-div2-card1-content-div3{
+
+height: 25%;
+width: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.div-icon1{
+ 
+    width: 15%;
+    display: flex;
+    gap: 20px;
+}
+.div-icon2{
+
+ width: 15%;
+}
+.div-icon3{
+
+ width: 15%;
+}
+.empty-icon{
+
+ width: 55%;
+}
+
+.main-div2-card2{
+  height: 40%;
+    width: 100%;
+  border: 1px solid rgb(233, 226, 226);
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 3px 3px 3px 3px  rgb(183, 178, 178);
+}
+
+.main-div2-card2-image{
+
+width: 20%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main-div2-card2-image-containing{
+       display: flex;
+    align-items:center ;
+    height: 40%;
+    justify-content: center;
+}
+.main-div2-card2-image div{
+    height: 60%;
+}
+.main-div2-card2-image-containing img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.main-div2-card2-content{
+
+width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.main-div2-card2-content-div1{
+
+height: 25%;
+width: 100%;
+display: flex;
+
+}
+.card2-content-div1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.card2-content-div1-1{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+.card2-content-div1-2{
+
+    height: 100%;
+    width: 50%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2-content-div2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.card2-content-div2-1{
+   
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.card2-content-div2-2{
+height: 100%;
+width: 10%;
+display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-div2-card2-content-div2{
+
+height: 50%;
+width: 100%;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+    
+}
+
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-div2-card2-content-div3{
+
+height: 25%;
+width: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.div-icon1{
+   
+    width: 15%;
+    display: flex;
+    gap: 20px;
+}
+.div-icon1 i{
+     color: rgb(77, 166, 254);
+}
+.div-icon2{
+
+ width: 15%;
+}
+.div-icon3{
+
+ width: 15%;
+}
+.div-icon3 i{
+
+    color: red;
+
+}
+.empty-icon{
+
+ width: 55%;
+}
+
+.main-div2-card3{
+  height: 20%;
+ width: 100%;
+  border: 1px solid rgb(233, 226, 226);
+    border-radius: 10px;
+    display: flex;
+   box-shadow: 3px 3px 3px 3px  rgb(183, 178, 178);
+ 
+}
+
+.main-div2-card3-image{
+
+width: 20%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.main-div2-card3-image-containing{
+       display: flex;
+    align-items:center ;
+    height: 100%;
+    justify-content: center;
+}
+.main-div2-card3-image div{
+    height: 60%;
+}
+.main-div2-card3-image-containing img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.main-div2-card3-content{
+
+width: 80%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.main-div2-card3-content-div1{
+
+height: 40%;
+width: 100%;
+display: flex;
+
+}
+.card3-content-div1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.card3-content-div1-1{
+   
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+.card3-content-div1-2{
+
+    height: 100%;
+    width: 50%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3-content-div2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.card3-content-div2-1{
+
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.card3-content-div2-2{
+
+height: 100%;
+width: 10%;
+display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-div2-card3-content-div2{
+
+height: 50%;
+width: 100%;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+    
+}
+
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div3{
+    width: 20%;
+    padding: 20px;
+
+}
+.main-div3-card{
+    border: 1px solid rgb(214, 202, 202);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgb(223, 220, 220);
+    
+}
+
+.main-div3-div1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.main-div3-image-div{
+
+width: 100%;
+height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.main-div3-image-div img{
+    height: 50%;
+    width: 40%;
+}
+.main-div3-text-heading{
+
+width: 100%;
+height: 10%;
+display: flex;
+justify-content: center;
+align-items: start;
+text-align: center;
+}
+.main-div3-text-sub{
+
+width: 100%;
+height: 40%;
+display: flex;
+text-align: center;
+
+}
+.main-div3-text-sub .sub-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-blue{
+    color: rgb(77, 166, 254);
+}
+
+.gray-shade{
+    color: rgb(139, 133, 133);
+}
+
+.font-icon-size{
+    font-size:24px;
+}

@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    
+}
+/* body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2196f3;
+    
+} */
+.container{
+    height: 100vh;
+    
+    background-color: white;
+    /* max-width: 960px; */
+    padding: 20px;
+    /* margin: 40px auto; */
+    border-radius: 10px;
+    
+}
+.header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+ .header-left{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.search-container{
+    position: relative;
+    width: 230px;
+}
+.search-container input{
+    width: 100%;
+    padding: 8px 12px 8px 32px;
+    border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-icon{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #333;
+  pointer-events: none;
+  
+}
+.header-right{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between; 
+}
+.nav-links a{
+    justify-content: space-around;
+    margin-right: 45px;
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.btn{
+  background: rgb(174, 219, 241);
+  color: rgb(49, 181, 242);
+  border: none;
+  border-radius: 3px;
+  font-weight: 900;
+  padding: 0px 6px;
+}
+.profile-container{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.profile-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+.active-dot{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: green;
+    height: 12px;
+    width: 12px ;
+    border: 2px solid white;
+    border-radius:50% ;
+}
+.main-section{
+    display: flex;
+    /* height: 100%; */
+    width: 100%;
+}
+.profile-left{
+    width: 30%;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+.image-section{
+    padding: 10px 10px; 
+}
+.image-section img{
+    height: 162px;
+    width: 174px;
+}
+.work-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 10px;
+}
+.work-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.work-heading span {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.work-heading .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #eee;
+}
+.spotify-entry{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.spotify-content{
+    display: flex;
+    gap: 8px;
+}
+.spotify-address{
+    color: #888;
+    font-size: 14px;
+}
+.museum-entry{
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.museum-content{
+display: flex;
+gap: 8px;
+}
+.museum-address{
+    color: #888;
+    font-size: 14px;
+}
+
+.skills-section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 10px;
+}
+.skills-heading{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #888;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.skills-heading .line{
+  flex-grow: 1;
+  height: 1px;
+  background-color: #eee;
+}
+.skills-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #888;
+    font-size: 12px;
+}
+
+.profile-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+}
+
+.name-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.name-loc{
+   
+    display:flex ;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.name{
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.map{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: gray;
+}
+.bookmark{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    color: gray;
+}
+.role{
+  color:  rgb(49, 181, 242); ;
+}
+
+.rank{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ranking{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.num-stars{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.color-stars{
+
+color: rgb(49, 181, 242);
+}
+.blank{
+    color: rgb(233, 219, 219) ;
+
+    
+}
+
+.message-section{
+   
+    display: flex;
+    gap: 90px;
+}
+.message{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.Contacts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.report-user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.btn{
+  background: rgb(174, 219, 241);
+  color: rgb(49, 181, 242);
+  border: none;
+  border-radius: 3px;
+  font-weight: 900;
+  padding: 0px 9px;
+}
+.time-about-section{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.timeline-about{
+   
+     display: flex;
+     gap: 40px;
+   
+}
+.timeline{
+
+ display: flex;
+ gap: 10px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: gray;
+ 
+
+}
+.timeline p{
+font-size: 18px;
+}
+.about{
+    
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+  
+
+}
+.about p{
+font-size: 18px;
+}
+
+.line-gray{
+    height: 2px;
+    background-color: rgb(243, 230, 230);
+    width: 100%;
+   
+}
+.details-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     
+}
+.contact-info-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.contact-data table tr td{
+    padding: 10px;
+    font-size: 11px;
+}
+
+.basic-info{
+
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+   
+}
+.basic-info-heading{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
+}
+.basic-data table tr td{
+padding: 5px;
+font-size: 11px;
+}
