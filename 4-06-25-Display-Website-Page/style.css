@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.container{
+    background-color: rgb(225, 216, 216);
+    height: 100%;
+    width: 100%;
+}
+
+
+.div1{
+    border: 1px solid black;
+    height: 100%;
+    /* background-image: url("./resources/pngtree-a-close-up-shot-of-sunflower-petals-with-the-background-blurred-image_17045874.jpg"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+.navbar{
+    height: 20%;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.logo-heading{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+ 
+  gap: 20px;
+}
+
+.logo-icon i{
+    font-size: 40px;
+    color: crimson;
+}
+.navlist{
+    
+    width: 60%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+.navlist  ul {
+display: flex;
+    flex-direction: row;
+    list-style-type: none;
+   gap: 60px;
+   align-items: center ;
+}
+
+.navlist  ul li{
+    display: flex;
+    align-items: center;
+}
+.navlist  ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.social-icons{
+
+width: 30%;
+height: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.tweet-icon i{
+font-size: 20px;
+padding: 4px;
+border: 1px solid black;
+border-radius: 50%;
+}
+.facebook-icon{
+    font-size: 20px;
+padding: 4px;
+border: 1px solid black;
+border-radius: 50%;
+}
+.youtube-icon i{
+font-size: 20px;
+padding: 4px;
+border: 1px solid black;
+border-radius: 50%;
+}
+.div2{
+    border: 1px solid black;
+    height: 100vh;
+}
+.div3{
+    border: 1px solid black;
+    height: 100vh;
+}
+.div4{
+    border: 1px solid black;
+    height: 100vh;
+}
