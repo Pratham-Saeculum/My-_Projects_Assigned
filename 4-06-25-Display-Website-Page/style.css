@@ -2,119 +2,390 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
 .container{
-    background-color: rgb(225, 216, 216);
-    height: 100%;
     width: 100%;
+   
+    
 }
-
 
 .div1{
-    border: 1px solid black;
-    height: 100%;
-    /* background-image: url("./resources/pngtree-a-close-up-shot-of-sunflower-petals-with-the-background-blurred-image_17045874.jpg"); */
-    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./resources/pic2.jpeg");
+    background-position: center top center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    padding: 20px;
+ 
+    
 
 }
-
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
 .navbar{
-    height: 20%;
+display: flex;
+align-items: center;
+gap: 40px;
+}
+.logo-heading{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo-heading i {
+   font-size: 40px;
+   color: rgb(226, 75, 75);
+}
+.logo-heading span{
+    font-size: 20px;
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+    cursor: pointer;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+.social-icons{
+    display: flex;
+    gap: 20px;
+}
+.social-icons i{
+    font-size: 30px;
+    color: rgb(226, 75, 75);
+}
+.div1-center-content{
+    /* height: 90%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:30vh ;
+    gap: 20px;
+}
+.heading-text{
+    font-size: 40px;
+    font-weight:900;
+    color: white;
+}
+.sub-text{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(210, 206, 206);
+}
+.email-subscribe{
+    justify-content: center;
+    display: flex;
+       gap: 10px;
+}
+.email-subscribe input{
+    width: 15%;
+    padding: 10px 26px;
+    border: none;
+}
+.email-subscribe button{
+    width: 10%;
+    background-color: rgb(226, 75, 75);
+    color: white;
+    border: none;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    color: white;
+}
+.div2{
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ background-color: whitesmoke;
+
+
+}
+.div2-upper-div{
+height: 70vh;
+display: flex;
+width: 100%;
+padding: 40px;
+gap: 10px;
+
+}
+.left-section{
+
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 40px;
+justify-content: center;
+/* align-items:center ; */
+}
+.heading-top{
+
+font-size: 40px;
+color: rgb(226, 75, 75);
+font-weight: 900;
+/* border-bottom: 3px solid  rgb(226, 75, 75); */
+
+}
+.line{
+    width: 10%;
+    border-bottom: 3px solid  rgb(226, 75, 75);
+}
+.sub-para{
+
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.para1{
+  
+
+    font-weight: 900;
+}
+.para2{
+ 
+ 
+}
+.right-section{
+
+width: 50%;
+display: flex;
+
+}
+.div2-lower-div{
+height: 30vh;
+width: 100%;
+display: flex;
+padding: 40px;
+}
+.cards-container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.card1{
+ 
+    width: 33.3%;
+    display: flex;
+  
+   
+}
+.card2{
+
+  width: 33.3%;
+  display: flex;
+}
+.card3{
+ 
+  width: 33.3%;
+  display: flex;
+}
+.icon-card{
+
+width: 20%;
+display: flex;
+justify-content:center ;
+align-items: center;
+color: rgb(226, 75, 75);
+font-size:40px;
+
+}
+.text-card{
+
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content:center ;
+align-items: start;
+gap: 20px;
+}
+.div3{
+ height: 100vh;
+ width: 100%;
+ padding: 20px;
+  background-color: whitesmoke;
+}
+.div3-top{
+
+height: 20vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center ;
+gap: 20px;
+
+
+}
+.div3-images-container{
+
+height: 60vh;
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 40px;
+}
+.upper-images{
+
+height: 50%;
+display: flex;
+gap: 30px;
+}
+.image-card{
+
+    width: 33.3%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lower-images{
+
+height: 50%;
+display: flex;
+gap: 30px;
+}
+.div4{
+    display: flex;
+    flex-direction: column;
+ height: 100vh;
+ width: 100%;
+ padding: 20px;
+  background-color: whitesmoke;
+ 
+}
+.div4-top{
+ 
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div4-info-content{
+  
+    /* height: 70vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.address-phone-email-map{
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.address{
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 20%;
+}
+.phone{
+   
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 20%;
+}
+.mail{
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+     width: 20%;
+}
+
+.add-icon{
+    color: rgb(226, 75, 75);
+}
+
+.address-phone-email-map button{
+    padding: 8px;
+    background-color: rgb(226, 75, 75);
+    color: white;
+    border: none;
+}
+.form-div{
+
+     width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
+   
+}
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     
+     width: 50%;
+}
+.name-email{
     display: flex;
     width: 100%;
     gap: 20px;
+    width: 100%;
+  
+}
+.name-email #name1{
+    width: 50%;
+    padding: 8px;
+}
+.name-email #email1{
+    width: 50%;
+     padding: 8px;
+}
+.sub input{
+    width: 100%;
+    padding: 8px;
 }
 
-.logo-heading{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 10%;
-    height: 10%;
- 
-  gap: 20px;
+.form-div button{
+padding: 8px;
+width: 20%;
+background-color:rgb(226, 75, 75);
+color: white;
+border: none;
 }
 
-.logo-icon i{
-    font-size: 40px;
-    color: crimson;
-}
-.navlist{
-    
-    width: 60%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-nav{
-    display: flex;
-    gap: 40px;
-}
-
-.navlist  ul {
-display: flex;
-    flex-direction: row;
-    list-style-type: none;
-   gap: 60px;
-   align-items: center ;
-}
-
-.navlist  ul li{
-    display: flex;
-    align-items: center;
-}
-.navlist  ul a{
-    text-decoration: none;
-    color: black;
-}
-
-.social-icons{
-
-width: 30%;
-height: 10%;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
-}
-
-.tweet-icon i{
+.black-text{
 font-size: 20px;
-padding: 4px;
-border: 1px solid black;
-border-radius: 50%;
 }
-.facebook-icon{
-    font-size: 20px;
-padding: 4px;
-border: 1px solid black;
-border-radius: 50%;
-}
-.youtube-icon i{
-font-size: 20px;
-padding: 4px;
-border: 1px solid black;
-border-radius: 50%;
-}
-.div2{
-    border: 1px solid black;
-    height: 100vh;
-}
-.div3{
-    border: 1px solid black;
-    height: 100vh;
-}
-.div4{
-    border: 1px solid black;
-    height: 100vh;
+.gray-text{
+color: gray;
+font-size: 18px;
 }
