@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 .container{
+    display: flex;
     background-color: beige;
     height: 100vh;
     width: 100%;
-    display: flex;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 .div1{
 
     width: 20%;
+    height: auto;
     background-color: rgb(243, 67, 99);
     display: flex;
     flex-direction: column;
@@ -280,7 +281,7 @@ height: 30%;
  color: rgb(123, 114, 114);
  position: absolute;
  left: 10px;
- bottom: 15px;
+ bottom: 12px;
  transform: rotate(90deg);
 }
 .search-content{
@@ -291,7 +292,7 @@ height: 30%;
 .search-content input{
     width: 70%;
     border-radius: 20px;
-    padding: 15px;
+   padding: 10px 30px 10px 40px; 
     border: 1px solid rgb(219, 209, 209);
     display: flex;
     text-align: center;
@@ -798,4 +799,112 @@ padding: 20px;
 }
  .td-3 {
   background-color: rgb(224, 130, 16);
+}
+
+@media (max-width:1000px){
+    .div1{
+        display: none;
+    }
+    .div2{
+        width: 100%;
+    }
+    .u1-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u1-12 h3 {
+    font-size: 13px;
+    }
+    .u2-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u2-12 h3 {
+    font-size: 13px;
+    }
+    .u3-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u3-12 h3 {
+    font-size: 13px;
+    }
+    .u4-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u4-12 h3 {
+    font-size: 13px;
+    }
+    .lower-div{
+        overflow: scroll;
+        flex-direction: column;
+    }
+    .left-div{
+        width: 100%;
+        height: 50%;
+    }
+    .right-div{
+        height: 50%;
+        width: 100%;
+       padding:5px;
+    
+    }
+
+    .right1{
+        display: flex;
+        flex-direction: row;
+    }
+    .r2{
+        width: 100%;
+        gap: 90px;
+    }
+
+    .r2-image img{
+        height: 100%;
+        width: 40%;
+    }
+    
+
+    
+}
+@media (max-width:768px) {
+    .u1-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u1-12 h3 {
+    font-size: 13px;
+    }
+    .u2-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u2-12 h3 {
+    font-size: 13px;
+    }
+    .u3-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u3-12 h3 {
+    font-size: 13px;
+    }
+    .u4-11 {
+        
+        font-size: 26px;
+       
+    }
+    .u4-12 h3 {
+    font-size: 13px;
+    }
+
+
 }

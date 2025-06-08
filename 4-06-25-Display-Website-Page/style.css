@@ -190,6 +190,7 @@ margin-top: 10vh;
 width: 100%;
 display: flex;
 
+
 }
 .cards-container{
     display: flex;
@@ -496,7 +497,7 @@ font-size: 18px;
 
 /* media queries */
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1000px){
     .navbar{
         display: none;
         gap: 10px
@@ -521,19 +522,21 @@ font-size: 18px;
         background-color: #fff;
     }
     
-    
+    .div2{
+        flex-direction: column;
+    }
 
     .div2-upper-div{
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         height: auto;
     }
 
     .left-section{
         justify-content: center;
         align-items: center;
-        width: 50%;
-        height: 100%;
+        width: 100%;
+       
     }
     .heading-top{
         justify-content: center;
@@ -542,33 +545,41 @@ font-size: 18px;
         font-size: 18px;
     }
     .line{
-        top: 900px;
-        width: 80%;
+        
+        width: 30%;
+    }
+
+    .right-section{
+        width: 100%;
+        justify-content:center ;
     }
     .cards-container{
-        height: 50%;
+  
         flex-direction: column;
     }
     .sub-para{
         flex-direction: row;
         gap: 100px;
+        display: none;
     }
   
     
-    .right-section{
-        width: 50%;
-        flex-direction: column;
-    }
+    
     .right-section img{
+     
+        width: 50%;
         object-fit:contain;
        
     }
-    .div2-lower-div{
-       
-      /* flex-direction: column; */
-       
-        
+   
+    .cards-container{
+    flex-wrap: wrap;
+    overflow: scroll;
+    display: contents;
+   
+    
     }
+
     .icon-card{
         width: 20%;
         font-size: 40px;
@@ -578,14 +589,10 @@ font-size: 18px;
     }
     .text-card .para2{
         font-size: 100%;
-       display: none;
+       /* display: none; */
     }
   
-    .cards-container{
-        flex-direction: row;
-        width: 50%;
-        gap: 80px
-    }
+    
     .card1{
         gap: 40px
 
@@ -598,18 +605,23 @@ font-size: 18px;
     }
 
     .div3-top .heading-top{
-        margin-top: 10px;
-        font-size: 40px;
+        /* margin-top: 10px; */
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
     }
 
     
-    .div3 .upper-images .image-container{
-        width: 100%;
-        height: 100%
-    }
     .image-container{
+        width: 100%;
+        height: 40%;
         flex-direction: column;
+        margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
     }
+   
     .image-card1 img{
         width: 50%;
         height: 70%;
@@ -628,13 +640,13 @@ font-size: 18px;
     }
     .image-card5 img{
         width: 50%;
-        height: 220px;
-        display: none;
+       height: 70%;
+        /* display: none; */
     }
     .image-card6 img{
         width: 50%;
-        height: 220px;
-        display: none
+        height: 70%;
+        /* display: none */
     }
     .div4 .heading-top{
        font-size: 30px
