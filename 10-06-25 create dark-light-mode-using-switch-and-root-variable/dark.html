@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark mode</title>
+    <link rel="stylesheet" href="dark.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" name="" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <em>Enable Dark Mode!</em>
+      </div>
+    </nav>
+
+    <section>
+      <article class="post">
+        <h1>The Principles of Good Design</h1>
+        <p class="post-meta">Circa 2014 <span>by</span> I am Daniel Stewart</p>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          molestiae quasi quod porro at voluptates, nulla corrupti vel iste,
+          consequuntur voluptate quia maxime? Unde ducimus perferendis
+          cupiditate vitae magnam. Quisquam illo veniam quasi amet dolorem
+          voluptas vel accusamus ex impedit. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Placeat debitis dolore voluptatibus vero
+          officia illum, nisi facilis odio quibusdam architecto nostrum ipsa
+          magni <strong>aperiam</strong> , ipsam sunt impedit autem error quod
+          sequi reiciendis tempora cumque necessitatibus voluptate .
+          <strong class="sevenhundred">beauty</strong> Corporis ipsam, numquam
+          praesentium rem, molestiae consequatur dolorem sit modi recusandae
+          doloribus, provident assumenda?
+        </p>
+
+        <p class="para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit dolores, voluptate tempora quaerat at consectetur
+          sapiente voluptas minima modi voluptatem quidem ut magni ab
+          accusantium beatae amet ipsa autem architecto ipsam
+          <strong class="eighthundred">beauty</strong> iure nisi a sed deserunt?
+          Et provident nulla optio, quam blanditiis repudiandae quo laborum sed
+          sapiente, voluptates debitis obcaecati.
+        </p>
+        <a
+          href="
+        #"
+          >Read More</a
+        >
+      </article>
+    </section>
+
+    <script>
+      const toggleSwitch = document.querySelector(
+        '.theme-switch input[type="checkbox"]'
+      );
+      const currentTheme = localStorage.getItem("theme");
+
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
+      }
+
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      toggleSwitch.addEventListener("change", switchTheme, false);
+    </script>
+  </body>
+</html>
