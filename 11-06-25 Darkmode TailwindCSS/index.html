@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode using Tailwind</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body
+    class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300"
+  >
+    <header
+      class="w-full p-4 shadow-md dark:drop-shadow-gray-700 bg-white dark:bg-gray-800 flex justify-end items-center"
+    >
+      <nav class="flex justify-end p-5">
+        <div class="flex items-center space-x-3">
+          <label class="relative inline-block w-14 h-8">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="opacity-0 w-0 h-0 peer"
+            />
+            <span
+              class="absolute cursor-pointer inset-0 bg-gray-400 rounded-full transition peer-checked:bg-green-400"
+            ></span>
+            <span
+              class="absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform peer-checked:translate-x-6"
+            ></span>
+          </label>
+          <em class="text-base italic text-black dark:text-[#ACAAF5]"
+            >Enable Dark Mode!</em
+          >
+        </div>
+      </nav>
+    </header>
+    <section class="p-10 text-center mb-4 flex flex-col gap-5">
+      <h2 class="text-4xl font-semibold mb-4 text-black dark:text-[#6E6AEE]">
+        Page showing dark mode using tailwind css
+      </h2>
+      <p
+        class="text-lg max-w-xl mx-auto mb-5 text-black dark:dark:text-[#ACAAF5] italic"
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+        tenetur dolorem non ipsa a dolores quibusdam architecto, dicta molestias
+        suscipit, adipisci ipsam eveniet natus. Quod dolores quam a illum
+        recusandae beatae quae, dignissimos cumque deserunt officia, quia
+        maiores obcaecati ullam!
+      </p>
+      <p
+        class="text-lg max-w-xl mx-auto mb-5 text-black dark:dark:text-[#ACAAF5] italic"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eaque,
+        error distinctio quaerat laborum natus nisi quam dolorem est
+        exercitationem, porro quos sint eos neque accusantium blanditiis
+        explicabo dolores nobis ab quod, a doloribus nemo! Placeat modi
+        assumenda fuga, numquam, ad voluptate blanditiis minima consequatur quod
+        veritatis distinctio reiciendis in! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit excepturi voluptatibus non.
+      </p>
+      <p
+        class="text-lg max-w-xl mx-auto mb-5 text-black dark:dark:text-[#ACAAF5] italic"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita
+        vero, eaque optio sunt in dolorem dicta ducimus, velit animi quo
+        dolorum. Voluptate fugit et ipsa quam? Et quia mollitia maiores
+        consequatur atque est, iure molestias dolorem dolorum nesciunt ex quae
+        nostrum animi eveniet repellat magni facilis sequi debitis accusamus.
+      </p>
+    </section>
+    <footer
+      class="text-center py-4 border-t border-gray-300 dark:border-gray-700 text-black dark:text-[#6E6AEE] flex justify-center"
+    >
+      <p class="italic">&copy; 2025 Built with Tailwind CSS.</p>
+    </footer>
+
+    <script>
+      const toggleSwitch = document.getElementById("checkbox");
+      const currentTheme = localStorage.getItem("theme");
+
+      if (currentTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        toggleSwitch.checked = true;
+      }
+
+      toggleSwitch.addEventListener("change", function (e) {
+        if (e.target.checked) {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+  </body>
+</html>
