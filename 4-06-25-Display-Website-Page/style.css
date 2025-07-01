@@ -103,6 +103,7 @@ gap: 40px;
     color: white;
 }
 .email-subscribe button{
+    cursor: pointer;
     width: 15%;
     padding: 10px 12px;
     text-align: center;
@@ -401,7 +402,7 @@ padding: 40px 20px;
     flex-direction: column;
     justify-content: start;
     align-items: end;
-    gap: 20px;
+    gap: 63px;
  
     
 }
@@ -417,12 +418,19 @@ padding: 40px 20px;
 }
 .phone{
    
+
     display: flex;
     justify-content: center;
     gap: 20px;
     width: 30%;
     font-size: 16px;
 }
+.phone a{
+    text-decoration: none;
+    color: black;
+    
+}
+
 .mail{
     
     display: flex;
@@ -432,13 +440,17 @@ padding: 40px 20px;
       font-size: 16px;
 
 }
+.mail a{
+    text-decoration: none;
+    color: black;
+}
 
 .add-icon{
     color: rgb(226, 75, 75);
 }
 
 .address-phone-email-map button{
-    padding:15px;
+    padding:8px;
     width: 25%;
     background-color: rgb(226, 75, 75);
     color: white;
@@ -448,6 +460,7 @@ padding: 40px 20px;
      align-items: center;
      font-size: 12px;
      text-align: center;
+     cursor: pointer;
    
 
 }
@@ -496,6 +509,7 @@ width: 20%;
 background-color:rgb(226, 75, 75);
 color: white;
 border: none;
+cursor: pointer;
 }
 
 .black-text{
