@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Button</title>
+    <style>
+      #btn {
+        background-color: rgb(35, 107, 231);
+        color: yellow;
+        border-radius: 6px;
+        padding: 5px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      #btn:hover {
+        background-color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="email" placeholder="Email" />
+      <br />
+      <br />
+      <label for="password">Password: </label>
+      <input type="text" name="password" id="password" placeholder="Password" />
+      <br />
+      <br />
+      <button id="btn" type="submit">Login</button>
+    </form>
+  </body>
+</html>

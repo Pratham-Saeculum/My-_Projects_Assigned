@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions in CSS</title>
+    <style>
+      .container {
+        position: relative;
+        height: 8000px;
+      }
+      img {
+        margin: 10px;
+      }
+      .img2 {
+        position: relative;
+        top: 100px;
+      }
+      .img3 {
+        position: sticky;
+      }
+      .img4 {
+        position: fixed;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img1" src="./images.png" alt="box 1" width="300px" />
+      <img class="img2" src="./images.png" alt="box 2" width="300px" />
+      <img class="img3" src="./images.png" alt="box 3" width="300px" />
+      <img class="img4" src="./images.png" alt="box 4" width="300px" />
+    </div>
+  </body>
+</html>
