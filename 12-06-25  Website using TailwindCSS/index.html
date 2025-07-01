@@ -24,7 +24,7 @@
       >
         <!-- Logo-title -->
         <div class="flex items-center gap-x-6 bg-gray-100 dark:bg-gray-900 ">
-          <a class="flex items-center w-[80px] 2xl:w[150px]" href="#">
+          <a class="flex items-center w-[80px] 2xl:w[150px]" href="./index.html">
             <img
               class="rounded-full"
               src="./src/circle-line-simple-design-logo-600nw-2174926871.webp"
@@ -64,7 +64,7 @@
   <select
     id="language"
     name="language"
-    class="w-full appearance-none px-3 pr-8  dark:border-gray-600  dark:bg-gray-800 text-gray-900 dark:text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
+    class="cursor-pointer w-full appearance-none px-3 pr-8  dark:border-gray-600  dark:bg-gray-800 text-gray-900 dark:text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400"
   >
     <option value="english" selected>English</option>
     <option value="japanese">Japanese</option>
@@ -163,7 +163,7 @@
       >
       
         <!-- Text Section -->
-        <div class="w-full lg:w-1/2 flex justify-center absolute bg-transparent  z-2 md:z-0 md:static">
+        <div class="w-full lg:w-1/2 flex justify-center absolute bg-transparent  z-2 md:z-0 md:static ">
           <div
             class="flex flex-col gap-5  text-start justify-center items-start "
           >
@@ -186,9 +186,8 @@
             <!-- button starts -->
             <button 
             onclick="openModal()"
-            class="text-xl md:text-sm lg:text-lg xl:text-xl w-fit min-w-[336px] md:min-w-full lg:min-w-[336px] max-w-[90%] md:max-w-full text-white bg-[#0982EC] hover:bg-[#0982EC]/80 rounded-full font-semibold justify-center items-center z-10 md:-z-0 shrink-0 py-3 px-[48px] mt-6"
->
-          Request car
+            class="cursor-pointer text-xl md:text-sm lg:text-lg xl:text-xl w-fit min-w-[336px] md:min-w-full lg:min-w-[336px] max-w-[90%] md:max-w-full text-white bg-[#0982EC] hover:bg-[#0982EC]/80 rounded-full font-semibold justify-center items-center z-10 md:-z-0 shrink-0 py-3 px-[48px] mt-6">
+            Request car
             </button>
 
             
@@ -203,7 +202,7 @@
             <!-- cross button -->
         <button
           onclick="closeModal()"
-          class="absolute top-2 right-3 !text-black dark:text-white  text-4xl font-bold"
+          class="absolute top-2 right-3 cursor-pointer text-black dark:text-white  text-4xl font-bold"
         >
         &times;
       </button>
@@ -830,11 +829,281 @@
               <option value="Pheonix">Pheonix</option>
             </select>
           </div>
-<button id="modal"
-  class="text-lg md:text-sm lg:text-lg xl:text-xl w-fit min-w-[336px] md:min-w-full lg:min-w-[336px] max-w-[90%] md:max-w-full text-white bg-[#0982EC] hover:bg-[#0982EC]/80 rounded-full font-semibold justify-center items-center z-10 md:-z-0 shrink-0 py-3 px-[48px] mt-1">
-  Request car
-</button>
+                <button id="modal"
+                  class="cursor-pointer text-lg md:text-sm lg:text-lg xl:text-xl w-fit min-w-[336px] md:min-w-full lg:min-w-[336px] max-w-[90%] md:max-w-full text-white bg-[#0982EC] hover:bg-[#0982EC]/80 rounded-full font-semibold justify-center items-center z-10 md:-z-0 shrink-0 py-3 px-[48px] mt-1">
+                  Request car
+                </button>
   
+                  <!-- form -->
+                   <div
+                id="modal"
+              class="hidden  fixed inset-0 z-50 flex  items-center justify-center bg-black/60 p-4 "
+
+              >
+              <div
+          class="relative z-50 w-full max-w-[1040px] max-h-[60vh] bg-gray-100 dark:bg-gray-800 rounded-[3rem] shadow-xl overflow-y-auto   p-6">
+              <!-- cross button -->
+          <button
+            onclick="closeModal()"
+            class="absolute top-2 right-3 !text-black dark:text-white  text-4xl font-bold"
+          >
+          &times;
+        </button>
+            <div class="fixed top-10 right-[8rem] w-full max-w-[80rem] z-40 rounded-4xl">
+      </div>
+
+      
+      <div  class="flex flex-col w-full max-w-[40rem] mt-3 justify-center">
+        <h1
+          class="text-3xl font-bold text-gray-800 dark:text-white text-center"
+        >
+          Car Booking Section
+        </h1>
+        <h3
+          class="text-xl font-light text-gray-800 dark:text-gray-300 text-center"
+        >
+          Complete the form to receive your booking request.
+        </h3>
+        <h3
+          class="text-xl text-center font-light text-gray-800 dark:text-gray-300"
+        >
+          Fields marked with * are mandatory.
+        </h3>
+      </div>
+
+      <div class="flex justify-between w-full">
+        <div class="w-full lg:w-1/2 ">
+          <form action="#" class="flex flex-col space-y-10">
+            
+            <div class="relative w-full">
+              <input
+                class="w-full border border-gray-300 dark:text-white font-semibold px-3 pt-4 pb-4 focus:outline-none py-4 pl-3 rounded-full"
+                type="text"
+                placeholder="Full Name*"
+              />
+            </div>
+            <div class="relative w-full">
+              <label
+                for="name"
+                class="absolute left-3 top-1 text-sm text-gray-500  px-1 dark:text-white font-semibold"
+              >
+                E-mail*
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="ex. example@domeniu.com"
+                class="w-full border dark:text-white font-semibold border-gray-300 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full"
+              />
+            </div>
+            <div class="relative w-full top-1 dark:text-gray-100">
+              <input
+                type="text"
+                id="name"
+                placeholder="13223 34342"
+                class="w-full border border-gray-300 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full"
+              />
+            </div>
+            <div class="relative w-full">
+              <label
+                for="name"
+                class="absolute left-3 top-1 text-sm text-gray-500 dark:text-white font-semibold  px-1"
+              >
+                Pick-up location:*
+              </label>
+
+              <select
+                name="loc"
+                id="loc"
+                class="dark:text-gray-100 w-full border border-gray-300 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full appearance-none"
+              >
+                <option
+                  value="indore"
+                  selected
+                  class="text-gray-500 dark:text-gray-100    "
+                >
+                  Please select a Pick-up location
+                </option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Britain">Britain</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Glassgow">Glassgow</option>
+                <option value="Pheonix">Pheonix</option>
+              </select>
+            </div>
+            <div class="relative w-full">
+              <label
+                for="name"
+                class="absolute left-3 top-1 text-sm text-gray-500 dark:text-white font-semibold px-1"
+              >
+                Your License Plate Number*
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="ex. B-123-AAA"
+                class="dark:text-gray-100 w-full border border-gray-300 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full"
+              />
+            </div>
+            <div class="relative w-full">
+              <label
+                for="name"
+                class="absolute left-3 top-1 text-sm text-gray-500 px-1 dark:text-white font-semibold"
+              >
+                Your Car Model:*
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="ex. Skoda Skala "
+                class="w-full border dark:text-gray-100 border-gray-300 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full"
+              />
+            </div>
+            <div class="relative w-full">
+              <label
+                for="name"
+                class="absolute left-3 top-1 text-sm text-gray-500 dark:text-gray-100 font-semibold  px-1"
+              >
+                Guilty Party's Insurer:*
+              </label>
+
+              <select
+                name="loc"
+                id="loc"
+                class= "dark:text-gray-100  w-full border border-gray-300 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full appearance-none"
+              >
+                <option class="dark:text-gray-100" value="Tokyo" selected class="dark:text-gray-100">WeCars</option>
+                <option
+                  value="Allian"
+                >
+                  Tokyo
+                </option>
+                <option value="INDIA">WeCars</option>
+                <option value="Britain">Britain</option>
+                <option value="Japan">Japan</option>
+                <option value="USA">USA</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label for="name" class="text-sm text-gray-500 dark:text-white font-semibold px-1">
+                Information
+              </label>
+
+              <textarea
+                class="w-full border border-gray-300 dark:text-gray-100 mt-3 px-3 pt-6 pb-2 focus:outline-none py-3 pl-3 rounded-full resize-none"
+                name="info"
+                id="info"
+                placeholder="Additional details or comments (optional)
+                      "
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="space-y-2">
+              <div
+                class="font-extralight text-sm text-gray-400 dark:text-gray-200"
+              >
+                <input type="checkbox" name="check" id="check" />
+                *I agree that Klass Wagen SRL may use my personal data mentioned
+                above to provide the necessary support for my request submitted
+                through this form. For more details on the processing of your
+                personal data, please read our
+                <span class="text-sky-300">Privacy Policy</span>.
+              </div>
+              <div
+                class="font-extralight text-sm text-gray-400 dark:text-gray-200"
+              >
+                <input type="checkbox" name="check" id="check" /> I agree to
+                receive offers and news from
+                <span class="text-sky-300"> WeCarsbold.com/inlocuiremasina</span> by
+                WeCars.
+            </div>
+
+            <div>
+              <button
+                class="bg-blue-500 mx-auto mt-3 w-full max-w-[20rem] px-[20px] py-[12px] flex justify-center rounded-4xl text-white font-semibold text-xl hover:bg-blue-400 transition duration-[.5s] ease-in-out"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        class="w-full max-w-md mx-auto max-h-[768px] h-full rounded-[3rem] bg-white p-[3rem]"
+      >
+        <div class="flex flex-col items-center">
+          <h1 class="font-semibold text-3xl text-gray-800 dark:text-black">
+            Our Cars
+          </h1>
+          <h3 class="font-extralight text-xl text-gray-700 dark:text-black">
+            We renew our fleet every year!
+          </h3>
+        </div>
+
+        
+     <!-- Carousel Section -->
+<div class="w-full   my-10">
+  <div class="swiper myCarSwiper mySingleSwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide flex flex-col items-center">
+        <img
+          src="./src/car4.jpeg"
+          alt="Car 1"
+          class="w-full h-60  object-cover rounded-4xl"
+        />
+        <p class="text-center font-semibold italic text-lg mt-2 text-black dark:text-white">Charger 360</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide flex flex-col items-center">
+        <img
+          src="./src/car5.jpeg"
+          alt="Car 2"
+          class="w-full h-60 object-cover rounded-4xl"
+        />
+        <p class="text-center font-semibold italic text-lg mt-2 text-black dark:text-white">Royal S11</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide flex flex-col items-center">
+        <img
+          src="./src/car6.jpeg"
+          alt="Car 3"
+          class="w-full h-60 object-cover rounded-4xl"
+        />
+        <p class="text-center font-semibold italic text-lg mt-2 text-black dark:text-white">Fleet S31</p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide flex flex-col items-center">
+        <img
+          src="./src/car7.jpeg"
+          alt="Car 4"
+          class="w-full h-60 object-cover rounded-4xl"
+        />
+        <p class="text-center font-semibold italic text-lg mt-2 text-black dark:text-white">Rt-567</p>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination mt-4"></div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next text-blue-600"></div>
+    <div class="swiper-button-prev text-blue-600"></div>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+
+    
+              </div>
+                    </div>
+
          
 
 
@@ -872,7 +1141,7 @@
 
       <!-- Main Footer -->
     <footer class="bg-gray-100 w-full text-gray-800 dark:bg-gray-900 ">
-  <div class=" mx-auto  flex flex-col gap-10  ">
+  <div class=" mx-auto  flex flex-col gap-10 px-6 py-4 ">
     
     <!-- Top Section -->
     <div class="flex flex-col lg:flex-row justify-between gap-6 flex-wrap ">
@@ -952,7 +1221,7 @@
            <p class="text-sm font-bold italic text-white dark:text-white">
              Stay updated with our latest offers. Subscribe to our <br> newsletter Lorem ipsum dolor sit amet consectetur. .
            </p>
-           <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded-full w-fit">
+           <button class="cursor-pointer bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded-full w-fit">
              Subscribe
            </button>
    
